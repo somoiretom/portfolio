@@ -18,15 +18,61 @@
     </nav>
     <hr />
     <h1>My Contacts</h1>
+     <!--Main Section-->
+     <h2><b>Drop me a line....</b></h2>
+     <form>
+       <div>
+       <label for="email"><b>Email*</b></label><br>
+       <input type="Varchar" value="Your Email"><br>
+       <br>
+       <label for="name"><b>Name*</b></label><br>
+       <input type="text" value="Your Name"><br>
+       <br>
+       <label for="tel"><b>Tel</b></label>
+       <input type="int" value="+254"><input type="int" value="07********"><br>
+       <br>
+       <label for="preferred means"><b>Preferred means:</b></label>
+       <label class="tel">Tel</label>
+       <input type="checkbox" id="checkbox-1-1" class="regular-checkbox" />
+       <label class="email">Email</label>
+       <input type="checkbox" id="checkbox-1-1" class="regular-checkbox" /><br>
+       <br>
+       <label class="product"><b>Product*</b></label><br>
+       <select name="" id="Product">
+         <option value="Web Application">Web Application</option>
+       </select><br>
+       <br>
+       <label for="message"><b>Message*</b></label>
+       <section id="app">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-10">
+              <div class="comment">
+            <!--<p v-for="items in item" v-text="items"></p>-->
+              </div><!--End Comment-->
+              </div><!--End col -->
+              </div><!-- End row -->
+          <div class="row">
+            <div class="col-10">
+          <textarea type="text" class="input" placeholder="" v-model="newItem" @keyup.enter="addItem()"></textarea>
+            </div>
+          </div><!--End Row -->
+        </div><!--End Container -->
+      </section><!-- end App --> <br>
+      <input type="checkbox" id="checkbox-1-1" class="regular-checkbox" />
+      <label for="offers">Subscribe to news and overs</label><br>
+      <br>
+      <input type="submit" value="Send Message">
+       </div>
+     </form>
+     <hr>
     <!--Footer Section-->
     <footer>
       <ul>
         <li>
-          <a href="http://www.somoiretom/portfolio">Github</a>
-          <a href="http://www.linkedin.com/in/somoire-jnr-90a107215/"
-            >LinkedIn</a
-          >
-        </li>
+          <a href="http://www.somoiretom/portfolio">Github</a></li>
+          <li><a href="http://www.linkedin.com/in/somoire-jnr-90a107215/"
+            >LinkedIn</a> </li>
         <li><a href="http://www.twitter.com/Somoire Jnr/">Twitter</a></li>
         <li><a href="http://www.instagram.com/somoirejnr/">Instagram</a></li>
       </ul>
