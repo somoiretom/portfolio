@@ -4,19 +4,36 @@
 body {
     font-size: 1.2em;
 }
-nav {
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.navbar {
     background-color: #0d162e;
-    line-height: 3em;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
-nav a{
+.navlink{
     color: #fff;
+    margin-right: 0.5rem;
 }
 header{
     background-color:#b8b8ca;
 }
 a{
     text-decoration: none;
+    color: white;
+}
+
+main {
+    flex-grow: 1;
+
 }
 footer ul{
     list-style-type: none;
