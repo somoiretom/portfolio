@@ -1,56 +1,117 @@
-*{
-    margin: 0em;
+* {
+  margin: 0em;
 }
+
 body {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
 .container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
-.navbar {
-    background-color: #0d162e;
-    height: 3rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  width: 90vw;
+  margin: auto;
 }
 
-.navlink{
-    color: #fff;
-    margin-right: 0.5rem;
+.text-center {
+  text-align: center;
 }
-header{
-    background-color:#b8b8ca;
+
+.navbar {
+  background-color: #0d162e;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
-a{
-    text-decoration: none;
-    color: white;
+
+.nav-link {
+  color: #fff;
+  margin-right: 0.5rem;
+}
+
+.nav-link:hover {
+  color: rgb(126, 75, 75);
+  margin-right: 0.5rem;
+}
+.jumbotron {
+  background-color: #b8b8ca;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 main {
-    flex-grow: 1;
-
-}
-footer ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-}
-footer ul li{
-    margin-right: 0.9em;
-}
-footer a{
-    color: #fff;
+  flex-grow: 1;
+  display: row;
 }
 
-footer{
-    background-color: #0d0418;
+.cards-container {
+  display: flex;
+  flex-direction: row;
 }
-footer p{
-    color: #fff;
-    text-align: center;
+
+.card {
+  min-width: 300px;
+  min-height: 300px;
+
+  margin: 0.5rem;
+}
+
+.b {
+  border: 1px solid #060613;
+}
+
+.box-shadow {
+  box-shadow: 0 0 1rem 0 #060613;
+}
+
+footer {
+  background-color: #0d0418;
+}
+footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+footer ul li {
+  margin-right: 0.9em;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+}
+#navbar-icon {
+  display: none;
+}
+
+@media screen and (max-width: 560px) {
+  .jumbotron {
+    flex-direction: column;
+  }
+
+  .nav-collapse {
+    display: none;
+  }
+
+  #navbar-icon {
+    display: inline-block;
+  }
 }
