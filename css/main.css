@@ -47,6 +47,7 @@ body {
   padding: 1rem;
 }
 
+
 a {
   text-decoration: none;
   color: white;
@@ -55,6 +56,9 @@ a {
 main {
   flex-grow: 1;
   display: row;
+}
+.container-body{
+  background-color: #94B0B7;
 }
 
 .cards-container {
@@ -75,6 +79,10 @@ main {
 
 .box-shadow {
   box-shadow: 0 0 1rem 0 #060613;
+}
+
+.btn{
+  background-color: rgb(12, 168, 240);
 }
 
 footer {
@@ -107,7 +115,7 @@ footer p {
     flex-direction: column;
   }
 
-  .nav-collapse {
+  .navbar-collapse {
     display: none;
   }
 
