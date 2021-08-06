@@ -64,12 +64,12 @@ main {
 .cards-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .card {
   min-width: 300px;
   min-height: 300px;
-
   margin: 0.5rem;
 }
 
@@ -117,6 +117,7 @@ footer p {
 
   .navbar-collapse {
     display: none;
+
   }
 
   #navbar-icon {
